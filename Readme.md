@@ -25,14 +25,15 @@
    - Запуск  машины centos7: **docker start centos7**
 4.   Результат выполнения плайбука на prod inventory:
    <img src='images/04.png'/>
-5.   В папках group_vars/deb для группы хостов deb и в папке group_vars/el корректируем файл examp.yml, содержащий факты   
-6.   В результате выполнения плайбука получаем:
+5. В папках group_vars/deb для группы хостов deb и в папке group_vars/el корректируем файл examp.yml, содержащий факты
+      
+6. В результате выполнения плайбука получаем:
    <img src='images/06.png'/>
-7.   Шифруем файлы при помощи команды **ansible-vault encrypt group_vars/deb/examp.yml group_vars/el/examp.yml**
-8.   Выполняем плайбук с ключом **--ask-vault-password**:
+7. Шифруем файлы при помощи команды **ansible-vault encrypt group_vars/deb/examp.yml group_vars/el/examp.yml**
+8. Выполняем плайбук с ключом **--ask-vault-password**:
    <img src='images/08.png'/>
-9.   Командой **ansible-doc -t inventory -l** выводим список всех inventory-плагинов. Командой **ansible-doc -t inventory ansible.builtin.yaml** выводим описание плагина ansible.builtin.yaml, встроенного в ansible, начиная с версии 2.4:
+9. Командой **ansible-doc -t inventory -l** выводим список всех inventory-плагинов. Командой **ansible-doc -t inventory ansible.builtin.yaml** выводим описание плагина ansible.builtin.yaml, встроенного в ansible, начиная с версии 2.4:
     <img src='images/09.png'/>
-10.  Шифруем дополнительный файл group_vars из папки group_vars/local командой **ansible-vault encrypt group_vars/local/examp.yml**
-11.  После запуска плайбука с указанием пароля получаем вывод:
+10. Шифруем дополнительный файл group_vars из папки group_vars/local командой **ansible-vault encrypt group_vars/local/examp.yml**
+11. После запуска плайбука с указанием пароля получаем вывод:
     <img src='images/10.png'/>
