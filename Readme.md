@@ -25,7 +25,7 @@
    - Запуск  машины centos7: **docker start centos7**
 4.   Результат выполнения плайбука на prod inventory:
    <img src='images/04.png'/>
-5. В папках group_vars/deb для группы хостов deb и в папке group_vars/el корректируем файл examp.yml, содержащий факты
+5. В папках group_vars/deb для группы хостов deb и в папке group_vars/el корректируем файл examp.yml, содержащий факты. 
 6. В результате выполнения плайбука получаем:
    <img src='images/06.png'/>
 7. Шифруем файлы при помощи команды **ansible-vault encrypt group_vars/deb/examp.yml group_vars/el/examp.yml**
